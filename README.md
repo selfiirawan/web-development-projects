@@ -11,7 +11,7 @@ This repository contains my mini exercises and projects done from Udemy course
 ## ⚙️ Tech & Tools Covered
 
 ### Front-End
-- HTML5, CSS3
+- HTML5, CSS3 ✅
 - Flexbox & Grid
 - Bootstrap 5
 - JavaScript (ES6+)
