@@ -19,7 +19,7 @@ This repository contains my mini exercises and projects done from Udemy course
 - jQuery
 
 ### Version Control & Tools
-- Git & GitHub
+- Git & GitHub 
 - Bash Command Line
 
 ### Back-End
@@ -36,7 +36,7 @@ This repository contains my mini exercises and projects done from Udemy course
 - React.js & React Hooks
 
 ### Deployment
-- GitHub Pages
+- GitHub Pages ✅
 
 ### Web3 (Introduction)
 - Blockchain basics
