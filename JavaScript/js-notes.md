@@ -49,3 +49,28 @@ name = "Alice";     \\ ❌ error
 let age = 26;
 age = 20;   \\ ✅ allowed
 ```
+
+<br>
+
+### .length
+- count the length of value 
+- start with 0 
+
+```
+const name = "Selfi";
+name.length 
+
+\\ output: 4
+```
+---
+
+### .slice(x,y)
+- slice value 
+- the last is not included 
+
+```
+const country = "Malaysia";
+country.slice(0,5);
+
+\\ output: Malay
+```
