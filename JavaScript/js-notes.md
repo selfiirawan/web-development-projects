@@ -63,7 +63,6 @@ name.length
 
 \\ output: 4
 ```
----
 
 ### .slice(x,y)
 - slice value 
