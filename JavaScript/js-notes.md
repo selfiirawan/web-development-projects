@@ -14,7 +14,7 @@ alert("Hello");
 ```
 prompt("Write a message.");
 ```
-- popped up message `with input box`
+- popped up message ==with input box==
 
 ---
 
