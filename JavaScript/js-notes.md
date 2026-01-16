@@ -64,6 +64,8 @@ name.length
 \\ output: 4
 ```
 
+<br>
+
 ### .slice(x,y)
 - slice value 
 - the last is not included 
