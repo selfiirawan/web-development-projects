@@ -20,8 +20,8 @@ prompt("Write a message.");
 
 ### typeof()
 ```
-typeof("Hello); 
-typeof(123);
+typeof("Hello);     \\ string
+typeof(123);    \\ number
 ```
 - tells the type of value 
 - string, Number, boolean 
@@ -42,5 +42,10 @@ typeof(123);
 e.g.
 ```
 const name = "Selfi";   \\ default
+name = "Alice";     \\ ❌ error
+```
+
+```
 let age = 26;
+age = 20;   \\ ✅ allowed
 ```
