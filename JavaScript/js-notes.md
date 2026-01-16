@@ -59,6 +59,7 @@ age = 20;   \\ ✅ allowed
 
 ```
 const name = "Selfi";
+
 name.length 
 
 \\ output: 4
@@ -72,7 +73,19 @@ name.length
 
 ```
 const country = "Malaysia";
+
 country.slice(0,5);
 
 \\ output: Malay
+```
+<br>
+
+### .toUpperCase() & .toLowerCase()
+- turn the string to all uppercase or all lowercase 
+
+```
+let country = "Malaysia";
+
+country.toUpperCase();  \\output: MALAYSIA
+country.toLowerCase();  \\output: malaysia 
 ```
