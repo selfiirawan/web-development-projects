@@ -8,7 +8,7 @@ alert("Hello");
 ```
 - popped up message
 
-<hr>
+---
 
 ### prompt()
 ```
@@ -16,7 +16,7 @@ prompt("Write a message.");
 ```
 - popped up message `with input box`
 
-<hr>
+---
 
 ### typeof()
 ```
@@ -26,7 +26,7 @@ typeof(123);    \\ number
 - tells the type of value 
 - string, Number, boolean 
 
----
+<br>
 
 ## var / let / const 
 > **🚨 In modern JavaScript, `var` is generally avoided. `let` and `const` are preferred as they are block-scopped and safer to use.**
@@ -49,8 +49,9 @@ name = "Alice";     \\ ❌ error
 let age = 26;
 age = 20;   \\ ✅ allowed
 ```
-
 <br>
+
+---
 
 ### .length
 - count the length of value 
