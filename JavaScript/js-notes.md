@@ -89,3 +89,25 @@ let country = "Malaysia";
 country.toUpperCase();  \\output: MALAYSIA
 country.toLowerCase();  \\output: malaysia 
 ```
+<br>
+
+## Increment(++) and Decrement(--)
+### Increment(++)
+- only +1
+```
+let x = 5;
+x++;
+
+\\output: 6
+```
+<br>
+
+### Decrement(--)
+- only -1 
+```
+let y = 6;
+y--;
+
+\\output: 5
+```
+
