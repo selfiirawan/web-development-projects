@@ -123,7 +123,7 @@ funcName();
 
 \\ output: Hello
 ```
-> no semi-colon(;) at the end of the function's curly bracket 
+> no `semi-colon(;)` at the end of the function's curly bracket 
 
 <br>
 
@@ -151,3 +151,45 @@ var x = funcName(3, 5);
 \\output: 15
 ```
 - also can join one function with other function 
+
+<br>
+
+## Math Functions 
+### Math.floor()
+- round off `down` to the nearest number 
+- eg:
+```
+let x = Math.floor(5.75);
+
+\\output: 5 (instead of 6)
+```
+
+<br>
+
+### Math.pow(base, exponent)
+- for square root or cubic 
+- eg:
+```
+// instead of: 
+let bmi = weight / (height * height);
+ 
+// we can use:
+let bmi = weight / Math.pow(height, 2);
+```
+
+<br>
+
+### Math.round()
+- round off to the nearest number (the correct one)
+- eg:
+```
+Math.round(6.53)
+
+\\output: 7 
+```
+
+<br>
+
+### Math.random()
+- generates random number **between 0 - 0.99999** (16 digits)
+- won't get >= 1 
