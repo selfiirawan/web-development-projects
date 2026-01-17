@@ -110,4 +110,44 @@ y--;
 
 \\output: 5
 ```
+<br>
 
+## Functions 
+- creating and calling functions 
+``` 
+function funcName() {
+    console.log("Hello");
+}
+
+funcName();
+
+\\ output: Hello
+```
+> no semi-colon(;) at the end of the function's curly bracket 
+
+<br>
+
+### Function with Parameters and Arguments 
+```
+function funcName(param) {
+    var x = param * 3;
+    console.log("He bought " + x + " milks");
+}
+ 
+funcName(3);
+
+\\ output: He bought 9 milks
+```
+<br>
+
+### Function: Outputs & Return Values 
+```
+function funcName(param1, arg2) {
+    return param1 * arg2;
+}
+ 
+var x = funcName(3, 5);
+
+\\output: 15
+```
+- also can join one function with other function 
