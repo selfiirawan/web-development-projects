@@ -235,7 +235,7 @@ a == b     // True
 
 <br>
 
-## Combining Comparators 
+### Combining Comparators 
 
 - and = && 
 - or = || 
@@ -246,3 +246,19 @@ if (a === 6 && a < 10) {
 }
 ```
 
+<br>
+
+## Array [ ]
+- eg:
+```
+let guestList = ["Anny", "John", "Brendon"];
+
+// also start from 0 
+guestList[0]; //output: Anny
+
+// can use .length 
+guestList.length;   //output: 3
+
+// .includes 
+guestList.includes("Brendon");   //output: True
+```
