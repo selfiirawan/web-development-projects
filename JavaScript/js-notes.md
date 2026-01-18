@@ -262,3 +262,34 @@ guestList.length;   //output: 3
 // .includes 
 guestList.includes("Brendon");   //output: True
 ```
+
+<br>
+
+## While and For Loop
+### While Loop
+- eg syntax :
+```
+let i = 1;
+
+while (i < 2) {
+    console.log(i);
+    i++;
+}
+```
+
+<br>
+
+### For Loop
+- syntax:
+```
+for (var; comparison; increment/decrement) {
+    // do something 
+}
+```
+
+- eg :
+```
+for (var i = 1; i < 3; i++) {
+    console.log(i);
+}
+```
