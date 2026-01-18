@@ -20,8 +20,8 @@ prompt("Write a message.");
 
 ### typeof()
 ```
-typeof("Hello);     \\ string
-typeof(123);    \\ number
+typeof("Hello);     // string
+typeof(123);    // number
 ```
 - tells the type of value 
 - string, Number, boolean 
@@ -41,13 +41,13 @@ typeof(123);    \\ number
 
 e.g.
 ```
-const name = "Selfi";   \\ default
-name = "Alice";     \\ ❌ error
+const name = "Selfi";   // default
+name = "Alice";     // ❌ error
 ```
 
 ```
 let age = 26;
-age = 20;   \\ ✅ allowed
+age = 20;   // ✅ allowed
 ```
 <br>
 
@@ -62,7 +62,7 @@ const name = "Selfi";
 
 name.length 
 
-\\ output: 4
+// output: 4
 ```
 
 <br>
@@ -76,7 +76,7 @@ const country = "Malaysia";
 
 country.slice(0,5);
 
-\\ output: Malay
+// output: Malay
 ```
 <br>
 
@@ -86,8 +86,8 @@ country.slice(0,5);
 ```
 let country = "Malaysia";
 
-country.toUpperCase();  \\output: MALAYSIA
-country.toLowerCase();  \\output: malaysia 
+country.toUpperCase();  //output: MALAYSIA
+country.toLowerCase();  //output: malaysia 
 ```
 <br>
 
@@ -98,7 +98,7 @@ country.toLowerCase();  \\output: malaysia
 let x = 5;
 x++;
 
-\\output: 6
+//output: 6
 ```
 <br>
 
@@ -108,7 +108,7 @@ x++;
 let y = 6;
 y--;
 
-\\output: 5
+//output: 5
 ```
 <br>
 
@@ -121,7 +121,7 @@ function funcName() {
 
 funcName();
 
-\\ output: Hello
+// output: Hello
 ```
 > no `semi-colon(;)` at the end of the function's curly bracket 
 
@@ -136,7 +136,7 @@ function funcName(param) {
  
 funcName(3);
 
-\\ output: He bought 9 milks
+// output: He bought 9 milks
 ```
 <br>
 
@@ -148,7 +148,7 @@ function funcName(param1, arg2) {
  
 var x = funcName(3, 5);
 
-\\output: 15
+//output: 15
 ```
 - also can join one function with other function 
 
@@ -161,7 +161,7 @@ var x = funcName(3, 5);
 ```
 let x = Math.floor(5.75);
 
-\\output: 5 (instead of 6)
+//output: 5 (instead of 6)
 ```
 
 <br>
@@ -185,7 +185,7 @@ let bmi = weight / Math.pow(height, 2);
 ```
 Math.round(6.53)
 
-\\output: 7 
+//output: 7 
 ```
 
 <br>
@@ -193,3 +193,42 @@ Math.round(6.53)
 ### Math.random()
 - generates random number **between 0 - 0.99999** (16 digits)
 - won't get >= 1 
+
+<br>
+
+## Control Flow 
+### if - else if - else 
+- e.g. syntax :
+```
+if (track === "clear") {
+    move();
+} else if (track === "dirty") {
+    turnLeft();
+} else {
+    turnRight();
+}
+```
+
+<br>
+
+### Comparators and Equality 
+
+|  ===  |     equals to     |
+|:-----:|:-----------------:|
+|  !==  |    not equals to  |
+|  <=   | lesser or equals  |
+|   >=  | greater ot equals |
+|   <   |    lesser than    |
+|   >   |    greater than   |
+
+<br>
+
+### === and ==
+eg:
+``` 
+const a = 1;
+const b = "1";
+
+a === b    // False 
+a == b     // True 
+```
