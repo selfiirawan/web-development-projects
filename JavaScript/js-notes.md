@@ -232,3 +232,17 @@ const b = "1";
 a === b    // False 
 a == b     // True 
 ```
+
+<br>
+
+## Combining Comparators 
+
+- and = && 
+- or = || 
+- eg :
+``` 
+if (a === 6 && a < 10) {
+    console.log(a);
+}
+```
+
