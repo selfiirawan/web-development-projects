@@ -452,6 +452,8 @@ document.getElementById("title").innerHTML = "Bye";
 document.querySelector(".btn");
 ```
 
+<br>
+
 ### Combining Selectors 
 - combining selector with other selector 
 - with space 
@@ -469,7 +471,6 @@ document.querySelector("li a");
 ```
 document.querySelector("li.item");
 ```
-
 <br>
 
 ### 5. document.querySelectorAll("");
@@ -487,5 +488,43 @@ document.querySelectorAll("#list .item")[0].style.color = "yellow";
 
 // change the first <li class="item"> to yellow
 ```
+<br>
 
 > More HTML DOM style object : https://www.w3schools.com/jsref/dom_obj_style.asp
+
+<br>
+
+## .classList , .add(""), .remove(""), .toggle("")
+### .classList 
+- list all the available class for the selected element/tag 
+- eg:
+```
+document.querySelector("button").classList;
+```
+<br>
+
+### .add("")
+- add new class to the selected element/tag 
+- eg:
+```
+document.querySelector("button").classList.add("invisible");
+```
+- add class `invisible` to `<button>`
+- `<button class="btn invisible">`
+<br>
+
+### .remove("")
+- remove a class from the selected element/tag 
+- eg:
+```
+document.querySelector("button").classList.remove("btn");
+```
+- remove class `btn` from `<button>` 
+- `<button class="invisible">`
+<br>
+
+### .toggle("")
+- act like an on-off switch from the class 
+``` 
+document.querySelector("button").classList.toggle("invisible");
+```
