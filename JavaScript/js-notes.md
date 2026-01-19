@@ -336,3 +336,47 @@ for (var i = 1; i < 3; i++) {
 
 </body>
 ```
+
+<br>
+
+## Document Object Model (DOM)
+### 1. document.firstElementChild;
+- get the **whole html structure** 
+
+### 2. document.firstElementChild.lastElementChild;
+- get only the `<body>` and its child
+
+### 3. document.firstElementChild.firstElementChild;
+- get only the `<head>` and whats inside 
+
+### 4. document.firstElementChild.lastElementChild.firstElementChild;
+- get the first element (eg; `<h1>`) of the lastElement (`<body>`)
+
+```
+html
+|___ body 
+|________h1 
+```
+
+eg:
+> index.html 
+```
+<body>
+    <h1>Hello</h1>
+    <input type="checkbox">
+
+    <script src="index.js" charset="utf-8"> </script>
+</body>
+```
+<br>
+
+> script.js
+```
+let heading = document.firstElementChild.lastElementChild.firstElementChild;
+
+heading // Hello 
+heading.innerHTML = "Goodbye";    // Hello -> Goodbye 
+heading.style.color = "red";    // change h1 color to red 
+
+document.querySelector("input").click();    // auto tick the checkbox
+```
