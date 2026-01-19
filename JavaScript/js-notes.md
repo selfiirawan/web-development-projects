@@ -293,3 +293,46 @@ for (var i = 1; i < 3; i++) {
     console.log(i);
 }
 ```
+
+<br>
+
+## Adding JavaScript to Websites 
+### External (most recommended ✅)
+- create a new file for js; `index.js`
+- insert `<script>` at the last line before `</body>`
+
+```
+<body>
+    <h1>Hello</h1>
+
+    <script src="index.js"></script>
+</body>
+```
+
+<br>
+
+### Internal 
+- the JS code is inside `<body>` at the last line before `</body>`
+
+```
+<body>
+    <h1>Hello</h1>
+
+    <script type="text/javascript">
+        alert("Goodbye");
+    </script>
+</body>
+```
+
+<br>
+
+## Inline (Not recommended ❌)
+- like inline css 
+
+```
+<body onload="alert('Goodbye');">
+    
+    <h1>Hello</h1>
+
+</body>
+```
