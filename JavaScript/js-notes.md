@@ -501,6 +501,7 @@ document.querySelectorAll("#list .item")[0].style.color = "yellow";
 ```
 document.querySelector("button").classList;
 ```
+
 <br>
 
 ### .add("")
@@ -511,6 +512,7 @@ document.querySelector("button").classList.add("invisible");
 ```
 - add class `invisible` to `<button>`
 - `<button class="btn invisible">`
+
 <br>
 
 ### .remove("")
@@ -521,6 +523,7 @@ document.querySelector("button").classList.remove("btn");
 ```
 - remove class `btn` from `<button>` 
 - `<button class="invisible">`
+
 <br>
 
 ### .toggle("")
