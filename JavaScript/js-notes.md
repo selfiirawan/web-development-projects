@@ -380,3 +380,110 @@ heading.style.color = "red";    // change h1 color to red
 
 document.querySelector("input").click();    // auto tick the checkbox
 ```
+
+<br>
+
+## Selecting HTML elements with JavaScript 
+
+### eg given:
+```
+<body>
+    <h1 id="title">Hello</h1>
+
+    <ul id="list">
+        <li class="item"><a></a><li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+</body>
+```
+
+### 1. document.getElementsByTagName("");
+- call with tag (`h1, body, button, etc.`)
+- output array []
+- if we want to call / change a specific items in one of the elements, we use index
+
+eg:
+```
+document.getElementByTagName("li")[1].style.color = "red";
+
+// change the second <li> to red [li, li, li]
+```
+
+- can also check the length 
+``` 
+document.getElementsByTagName("li").length;
+
+// output: 3
+```
+
+<br>
+
+### 2. document.getElementsByClassName("");
+- call with class
+- output also in array [], so call with index 
+- no need to use '.' just put the class name 
+
+```
+document.getElementsByClassName("item")[2].style.color = "blue";
+
+// change the third[2] <li> to blue 
+```
+
+<br>
+
+### 3. document.getElementById("");
+- call with id
+- no need # , just put the ID name 
+
+``` 
+document.getElementById("title").innerHTML = "Bye";
+
+// change element with ID #title to Bye
+```
+
+<br>
+
+### 4. document.querySelector("");
+- call with selector, as in CSS selector 
+- can be tags, id(#) or/and class(.)
+
+```
+document.querySelector(".btn");
+```
+
+### Combining Selectors 
+- combining selector with other selector 
+- with space 
+> `li` --> `a`
+```
+document.querySelector("li a");
+``` 
+
+<br>
+
+- without space 
+- more specific 
+- but only return the first one 
+> calling `li` with `.item` class 
+```
+document.querySelector("li.item");
+```
+
+<br>
+
+### 5. document.querySelectorAll("");
+- select **all** from the selected selector 
+- output in array[], modify with index 
+```
+document.querySelectorAll("#list .item");
+
+// select all .item
+// in array form [.item, .item, .item]
+```
+
+```
+document.querySelectorAll("#list .item")[0].style.color = "yellow";
+
+// change the first <li class="item"> to yellow
+```
