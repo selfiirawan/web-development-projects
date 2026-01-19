@@ -487,3 +487,5 @@ document.querySelectorAll("#list .item")[0].style.color = "yellow";
 
 // change the first <li class="item"> to yellow
 ```
+
+> More HTML DOM style object : https://www.w3schools.com/jsref/dom_obj_style.asp
