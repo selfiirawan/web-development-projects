@@ -551,3 +551,25 @@ document.querySelector("h1).innerHTML = "Goodbye!"; ✅
 document.querySelector("h1).innerHTML = "Goodbye!"; ✅
 document.querySelector("h1).innerHTML = "<em>Goodbye!</em>"; ❌
 ``` 
+
+<br>
+
+## Manipulating HTML Element Attributes 
+### .getAttribute(" ")
+- **get** the value of the attributes 
+```
+document.querySelector("a").getAttribute("href");
+
+// output: "http://www.something.com"
+```
+
+<br>
+
+### .setAttribute("att", replacement)
+- **change** the value of the attribute 
+- eg: 
+```
+document.querySelector("a").setAttribute("href", "https//www.new-href.com");
+
+// change the href of  <a>
+```
