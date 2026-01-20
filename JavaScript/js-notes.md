@@ -501,7 +501,6 @@ document.querySelectorAll("#list .item")[0].style.color = "yellow";
 ```
 document.querySelector("button").classList;
 ```
-
 <br>
 
 ### .add("")
@@ -531,3 +530,24 @@ document.querySelector("button").classList.remove("btn");
 ``` 
 document.querySelector("button").classList.toggle("invisible");
 ```
+
+<br>
+
+## Text Manipulation and Text Content Property
+### .innerHTML 
+- can include tag 
+- eg :
+```
+document.querySelector("h1).innerHTML = "<em>Goodbye!</em>"; ✅
+document.querySelector("h1).innerHTML = "Goodbye!"; ✅
+```
+
+<br>
+
+### .textContent 
+- cannot include tag, only text 
+- eg: 
+```
+document.querySelector("h1).innerHTML = "Goodbye!"; ✅
+document.querySelector("h1).innerHTML = "<em>Goodbye!</em>"; ❌
+``` 
