@@ -694,3 +694,59 @@ switch (x) {
   default:
 }
 ```
+
+<br>
+
+## JavaScript Object 
+- similar to dictionary in Python 
+- an object groups related data and behavior into one variable.
+
+### Syntax
+```
+const bellBoy1 = {
+    name: "Tommy",
+    age: 19,
+    hasWorkPermit: True,
+    languages: ["French","English"],
+}
+```
+
+### Accessing Object Values 
+``` 
+bellBoy1.name   // Tommy 
+bellBoy1["age"]    // 19
+```
+
+### Add / Update Property 
+```
+bellBoy1.country = "London";    // add 
+bellBoy1.age = 20;      // update 
+```
+
+### Remove a Property 
+- use `delete`
+```
+delete bellBoy1.languages;
+```
+
+<br>
+
+### Method (function) in Object
+```
+const bellBoy1 = {
+    name: "Tommy",
+    age: 19,
+    hasWorkPermit: True,
+    languages: ["French","English"],
+    moveSuitcase: function () {
+        alert("May i take your suitcase");
+        pickup();
+        move();
+    }
+}
+
+bellBoy1.moveSuitcase();
+```
+
+<br>
+ 
