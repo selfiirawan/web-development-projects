@@ -8,13 +8,14 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
         makeSound(buttonInnerHTML);
         buttonAnimation(buttonInnerHTML);
     });
+}
 
     // Detect Pressed Keyboard
-    document.addEventListener("keydown", function(event) {
-        makeSound(event.key);
-        buttonAnimation(event.key);
-    });
-}
+document.addEventListener("keydown", function(event) {
+    makeSound(event.key);
+    buttonAnimation(event.key);
+});
+
 
 function makeSound(key) {
     
