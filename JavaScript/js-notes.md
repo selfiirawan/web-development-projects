@@ -599,8 +599,6 @@ function handleClick() {
 }
 ```
 
-<br>
-
 ### Docs 
 > https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener <br>
 > https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events 
@@ -623,3 +621,76 @@ higherOrder(greet);
 ```
 - `greet` - is passed into other function 
 - `higherOrder` - uses it 
+
+<br>
+
+## Audio() Method 
+- to add audio on JS 
+- Audio("url")
+- eg:
+```
+const sound = new Audio("sounds/tom3.mp3");
+sound.play();
+```
+
+### Docs
+> https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement
+
+<br>
+
+## Switch Statement 
+- similar to if, else if, else but simpler
+- eg 1:
+```
+let buttonInnerHTML = this.innerHTML;
+
+switch (buttonInnerHTML) {
+    case "w":
+        var audio1 = new Audio("sounds/tom1.png");
+        audio1.play();
+        break;
+
+    case "k":
+        var audio2 = new Audio("sounds/tom2.png");
+        audio2.play();
+        break;
+
+    default: console.log(buttonInnerHTML);
+}
+
+// case takes the class name and act like if and else if 
+// default act like else 
+``` 
+
+<br>
+
+- eg 2:
+```
+let day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("Start of the week");
+    break;
+  case "Friday":
+    console.log("Almost weekend");
+    break;
+  default:
+    console.log("Just another day");
+}
+```
+
+### Quick Comparison : 
+```
+// if-else
+if (x === 1) {}
+else if (x === 2) {}
+else {}
+
+// switch
+switch (x) {
+  case 1: break;
+  case 2: break;
+  default:
+}
+```
