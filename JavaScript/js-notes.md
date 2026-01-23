@@ -573,3 +573,34 @@ document.querySelector("a").setAttribute("href", "https//www.new-href.com");
 
 // change the href of  <a>
 ```
+
+<br>
+
+## .addEventListener("event", function)
+- used to make a webpage respond to user actions (like clicking a button, typing, or hovering). It “listens” for an event and then runs a function when that event happens.
+- eg 1 (anonymous function):
+```
+button.addEventListener("click", function () {
+  alert("Button clicked!");
+});
+```
+- `button` - the element
+- `"click"` - the event to listen for 
+- `function () {}` - what to do when it happens
+
+<br>
+
+- eg 2 (separated function):
+```
+document.querySelector("button").addEventListener("click", handleClick);
+
+function handleClick() {
+    alert("I got clicked!");
+}
+```
+
+<br>
+
+### Docs 
+> https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener <br>
+> https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events
