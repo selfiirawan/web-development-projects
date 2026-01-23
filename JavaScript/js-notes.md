@@ -750,3 +750,52 @@ bellBoy1.moveSuitcase();
 
 <br>
  
+## Constructor Function 
+- builds reusable object templates using `new`
+- like a production factory 
+- name start with capital letter instead of camelCase 
+
+### Syntax 
+``` 
+function BellBoy (name, age, hasPermit, languages) {
+    this.name = name;
+    this.age = age;
+    this.hasPermit = hasPermit;
+    this.languages = languages;
+}
+```
+- `this` - refers to the current object 
+
+### Create Object 
+```
+const bellBoy1 = new BellBoy("Tommy", 23, True, ["French", "English"]);
+const bellBoy2 = new BellBoy("John", 19, True, ["English"]);
+...
+```
+- `new` to create new instances 
+
+### Calling / Accessing Object 
+```
+bellBoy1.name  // Tommy
+bellBoy2.age   // 19
+```
+
+<br>
+
+### Method (function) in Constructor 
+```
+function BellBoy (name, age, hasPermit, languages) {
+    this.name = name;
+    this.age = age;
+    this.hasPermit = hasPermit;
+    this.languages = languages;
+    this.moveSuitcase = function () {
+        alert("May i take your suitcase");
+        pickup();
+        move();
+    }
+}
+
+bellBoy1.moveSuitcase();
+bellBoy2.moveSuitcase();
+```
