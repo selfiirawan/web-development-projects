@@ -603,4 +603,23 @@ function handleClick() {
 
 ### Docs 
 > https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener <br>
-> https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events
+> https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events 
+
+<br>
+
+## Higher Order Function (HOF)
+- functions that uses other function 
+- eg:
+```
+function greet(name) {
+  return "Hello " + name;
+}
+
+function higherOrder(fn) {
+  return fn("Alice");
+}
+
+higherOrder(greet);
+```
+- `greet` - is passed into other function 
+- `higherOrder` - uses it 
