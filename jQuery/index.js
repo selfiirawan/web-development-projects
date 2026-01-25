@@ -14,4 +14,8 @@ $("button").html("<em>Click</em>");
 $("a").attr("href"); // get attribute 
 $("a").attr("href", "https://www.instagram.com"); // set attribute 
 
-// 
+// add event listener 
+$(document).keydown(function(event) {
+    $("h1").text(event.key);
+    console.log(event.key);
+})
