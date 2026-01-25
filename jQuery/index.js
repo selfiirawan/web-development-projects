@@ -19,3 +19,12 @@ $(document).keydown(function(event) {
     $("h1").text(event.key);
     console.log(event.key);
 })
+
+// add element 
+$("h1").before("<button>Before</button>");
+$("h1").after("<button>After</button>");
+$("h1").prepend("<button>Prepend</button>");
+$("h1").append("<button>Append</button>");
+
+// remove element 
+//$("button").remove();
