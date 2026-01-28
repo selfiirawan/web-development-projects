@@ -831,3 +831,58 @@ function makeSound(key) {
 
 ### Doc 
 > https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
+
+<br>
+
+## Callback Function
+- a function that is **passed as an argument to another function** and executed later when a **specific task or event is completed**.
+- commonly use for `button clicks`, timers `(setTimeout)`, `API requests`, array methods (`map`,`filter`,`forEach`)
+- the function is passed **without parentheses**
+- callback **runs later, not immediately**
+
+<br>
+
+### eg basic syntax:
+```
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
+
+function sayBye() {
+    console.log("Bye!");
+}
+
+greet("Alice", sayBye);
+```
+- `sayBye` is a callback function
+- It is passed, not called (`sayBye` not `sayBye()`)
+
+<br>
+
+### Callback in event handling (very common)
+```
+button.addEventListener("click", function () {
+    console.log("Button clicked!");
+});
+```
+- the function runs only when the click happens
+- the function is a callback
+
+<br>
+
+### Callback with timers 
+```
+setTimeout(() => {
+    console.log("This runs after 2 seconds");
+}, 2000);
+```
+- function is called **after delay**
+- delay is in `milliseconds`
+
+<br>
+
+### COMMON MISTAKE 
+❌ ` button.addEventListener("click", rollDice()); `
+
+✅ ` button.addEventListener("click", rollDice); `
