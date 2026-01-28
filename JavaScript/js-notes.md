@@ -799,3 +799,35 @@ function BellBoy (name, age, hasPermit, languages) {
 bellBoy1.moveSuitcase();
 bellBoy2.moveSuitcase();
 ```
+
+<br>
+
+## Event Listener for Key Press (keydown)
+- detect when any key on the keyboard is press
+- use `keydown` keyword 
+- syntax eg:
+```
+document.addEventListener("keydown", function (event) {
+    makeSound(event.key);
+});    
+
+function makeSound(key) {
+    
+    switch (key) {
+        case "w":
+            var crash = new Audio("sounds/crash.mp3");
+            crash.play();
+            break;
+
+        case "a":
+            var tom2 = new Audio("sounds/tom-2.mp3");
+            tom2.play();
+            break;
+        
+        default: console.log(buttonInnerHTML);
+    }
+}
+```
+
+### Doc 
+> https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
