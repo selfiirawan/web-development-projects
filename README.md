@@ -16,11 +16,11 @@ This repository contains my mini exercises and projects done from Udemy course
 - Bootstrap 5 ✅
 - JavaScript (ES6+) ✅
 - DOM Manipulation ✅
-- jQuery
+- jQuery ✅
 
 ### Version Control & Tools
 - Git & GitHub 
-- Bash Command Line
+- Bash Command Line ✅
 
 ### Back-End
 - Node.js & NPM
