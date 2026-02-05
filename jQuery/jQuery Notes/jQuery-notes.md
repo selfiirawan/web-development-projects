@@ -30,3 +30,16 @@ $(document).ready(function () {
     $("h1").css("color","red");
 })
 ```
+
+<br>
+
+## Select Elements with jQuery 
+- using $ sign 
+- will select all chosen element 
+- eg:
+```
+$("h1");
+$("button");
+
+// will select all h1 and button element 
+```
