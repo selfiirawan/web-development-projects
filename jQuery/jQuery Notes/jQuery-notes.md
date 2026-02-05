@@ -176,3 +176,75 @@ $("h1").append("<button>New</button>");
 ```
 $("h1").remove();
 ```
+
+<br>
+
+## Animation with jQuery 
+- easy way to add effects to websites 
+- can show, hide, fade, slide, and move elements easily
+- can animate CSS properties 
+- includes built in fade and slide effects 
+
+<br>
+
+### Common jQuery Effects 
+### ✏︎ animate()
+**syntax :**
+```
+$(selector).animate(properties, duration);
+```
+- `selector` - the element we want to animate 
+- `properties` - CSS properties to change 
+- `duration` - animation speed (ms or "slow"/"fast")
+
+<br>
+
+**example: moving a box**
+```
+$(".box").animate({
+    left: "250px"
+}, 1000);
+```
+- moves the element to the right after 1 sec
+
+<br>
+
+### ✏︎ show() / hide()
+```
+$("#btn").click(function() {
+    $(".box").hide();
+});
+```
+- hide element when clicked 
+
+<br>
+
+### ✏︎ fadeIn() / fadeOut()
+```
+$(".box").fadeIn(1000);
+$(".box").fadeOut(1000);
+```
+- gives fade effect
+
+<br>
+
+### ✏︎ slideUp() / slideDown()
+```
+$(".box").slideUp();
+$(".box").slideDown();
+```
+- slide up / down the element 
+
+<br>
+
+### Animate Multiple Properties 
+```
+$(".box").animate({
+    height: "200px",
+    width: "200px",
+    opacity: 0.5
+}, 1500);
+```
+
+### Tip
+> jQuery animations work best when elements have `position: relative;`
