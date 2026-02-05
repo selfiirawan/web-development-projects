@@ -15,3 +15,18 @@ $("h1");
 
 <br>
 
+## Implementing jQuery 
+1. go to jquery website 
+2. choose `google CDN` 
+3. copy the script tag from the **latest version**
+4. paste the script tag **before** JS script tag 
+
+### extra notes 
+- if the script tag is placed inside `<head>`, we need to use `ready()` method to run the code 
+- but **not recommended** ❌
+- eg :
+``` 
+$(document).ready(function () {
+    $("h1").css("color","red");
+})
+```
