@@ -78,3 +78,18 @@ $("h1").removeClass("big-title margin-50");
 // to check for the class
 $("h1").hasClass("big-title");
 ```
+
+<br>
+
+## Manipulating Text with jQuery 
+- using `.text(" ")` and `.html(" ")`
+- similar to `.innerHTML` and `.innerText`
+
+### example 
+``` 
+$("h1").text("Bye");             ✅
+$("h1").text("<em>Bye</em>");    ❌
+ 
+$("h1").html("<em>Bye</em>");    ✅
+$("h1").html("Bye");             ✅
+``` 
