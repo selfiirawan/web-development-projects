@@ -886,3 +886,30 @@ setTimeout(() => {
 ❌ ` button.addEventListener("click", rollDice()); `
 
 ✅ ` button.addEventListener("click", rollDice); `
+
+<br>
+
+## setTimeout() Method 
+- a JavaScript function that runs a piece of code after a delay
+
+### syntax 
+```
+setTimeout(function, delay);
+```
+- `function` - the code we want to run later 
+- `delay` - the time, in milliseconds (ms)
+> 🕰️ 1000ms = 1 second 
+
+### example 
+```
+setTimeout(() => {
+  alert("Welcome to my website!");
+}, 5000);
+```
+- the alert appears after 5sec 
+
+### Doc 
+> https://www.w3schools.com/jsref/met_win_settimeout.asp
+
+### Demo 
+> https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout1
