@@ -125,3 +125,54 @@ $("h1").click(function() {
 $("button").keydown(function(event) {
     console.log(event.key);
 })
+```
+
+<br>
+
+## Adding / Removing Elements 
+### before()
+- add new element **before** the selected element 
+- eg:
+```
+$("h1").before("<button>New</button>")
+
+// add new element before the h1 tag 
+<button>New</button><h1>Hello</h1>
+```
+
+### after()
+- add new element **after** the selected element 
+- eg:
+```
+$("h1").after("<button>New</button>")
+
+// add new element after the h1 tag 
+<h1>Hello</h1><button>New</button>
+```
+
+### prepend()
+- add new element **after** the **opening tag** of the selected element
+- eg:
+```
+$("h1").prepend("<button>New</button>");
+ 
+// add button after h1 opening tag
+<h1><button>New</button>Hello</h1>
+```
+
+### append()
+- add new element **before** the **closing tag** of the selected element
+- eg:
+```
+$("h1").append("<button>New</button>");
+ 
+// add button after h1 opening tag
+<h1>Hello<button>New</button></h1>
+```
+
+### remove()
+- remove **all** the selected element
+- eg :
+```
+$("h1").remove();
+```
