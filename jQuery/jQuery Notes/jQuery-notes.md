@@ -93,3 +93,19 @@ $("h1").text("<em>Bye</em>");    ❌
 $("h1").html("<em>Bye</em>");    ✅
 $("h1").html("Bye");             ✅
 ``` 
+
+<br>
+
+## Manipulating Attributes with jQuery 
+- setting the `.getAttribute` and `.setAttribute` with jQuery
+- using `.attr()`
+```
+.attr(" ") = .getAttribute
+.attr(" ", " ") = .setAttribute 
+```
+
+### example 
+```
+$("img").attr("src");
+$("img").attr("src", "http://www.sefghj.com");
+```
