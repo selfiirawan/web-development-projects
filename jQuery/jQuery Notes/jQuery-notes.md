@@ -43,3 +43,38 @@ $("button");
 
 // will select all h1 and button element 
 ```
+
+<br>
+
+## Manipulating Styles with jQuery 
+### Add, Remove or Check for class 
+- create and styles class in the **css file**
+- do the behaviour in **js file** (with jquery)
+- can add multiple class, just with **space**, not period(.) or comma(,)
+
+### example 
+> styles.css 
+```
+.big-title {
+    font-size: 5rem;
+    color: yellow;
+}
+ 
+.margin-50 {
+    margin: 50px;
+}
+```
+
+<br>
+
+> index.js 
+```
+// to add class
+$("h1").addClass("big-title margin-50");
+ 
+// to remove class 
+$("h1").removeClass("big-title margin-50");
+ 
+// to check for the class
+$("h1").hasClass("big-title");
+```
