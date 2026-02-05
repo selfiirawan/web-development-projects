@@ -109,3 +109,19 @@ $("h1").html("Bye");             ✅
 $("img").attr("src");
 $("img").attr("src", "http://www.sefghj.com");
 ```
+
+<br>
+
+## Add Event Listener with jQuery 
+### syntax example 1 
+```
+$("h1").click(function() {
+    $("h1").css("color", "red");
+})
+```
+
+### syntax example 2 
+```
+$("button").keydown(function(event) {
+    console.log(event.key);
+})
