@@ -19,12 +19,12 @@ This repository contains my mini exercises and projects done from Udemy course
 - jQuery ✅
 
 ### Version Control & Tools
-- Git & GitHub 
+- Git & GitHub ✅
 - Bash Command Line ✅
 
 ### Back-End
-- Node.js & NPM
-- Express.js
+- Node.js & NPM ✅
+- Express.js ✅
 - EJS
 - RESTful APIs
 
