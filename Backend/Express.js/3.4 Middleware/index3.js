@@ -3,6 +3,12 @@ import express from "express";
 const app = express();
 const port = 3000;
 
+// custom logger middleware function
+const logger = (req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+}
+
 app.use(logger);
 
 app.get("/", (req, res) => {
