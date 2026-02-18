@@ -1,0 +1,16 @@
+{
+  "name": "4.0-ejs",
+  "version": "1.0.0",
+  "description": "Introduction to EJS ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Selfi Irawan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}
