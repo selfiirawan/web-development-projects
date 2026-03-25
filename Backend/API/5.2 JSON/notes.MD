@@ -43,3 +43,21 @@ eg;
 https://bored-api.appbrewery.com/filter?type=education
 ```
 - **query parameter** - ```?type=education```
+
+
+## Multiple Query Parameters 
+```base-url/endpoint?query1=value1&query2=value2 ```
+- add ```&query=value```
+- start with **?** for the first query-value, cont with **&** for multiple query-value
+
+
+## Path Parameter 
+```base-url/endpoint/{path-param}```
+- use to identify a resource by some specific parameters in the API; 
+- *id, username* etc
+
+eg:
+```
+https://bored-api.appbrewery.com/activity/3943506
+```
+- **path parameter** - 3943506
