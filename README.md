@@ -25,8 +25,8 @@ This repository contains my mini exercises and projects done from Udemy course
 ### Back-End
 - Node.js & NPM ✅
 - Express.js ✅
-- EJS
-- RESTful APIs
+- EJS ✅
+- RESTful APIs ✅
 
 ### Databases & Authentication
 - SQL & PostgreSQL
