@@ -61,3 +61,25 @@ eg:
 https://bored-api.appbrewery.com/activity/3943506
 ```
 - **path parameter** - 3943506
+
+<br>
+
+## JSON 
+### **JavaScript Object Notation**
+
+- a way to format data that can be sent over the internet in a readable and efficient way
+- json viewer - view flat json in a readable format
+
+<br>
+
+### JS Object -> JSON 
+- use **stringify()**
+```
+const jsonData = JSON.stringify(dataObject);
+```
+
+### JSON -> JS Object 
+- use **parse()**
+```
+const data = JSON.parse(jsonData);
+```
