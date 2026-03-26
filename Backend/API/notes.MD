@@ -1,8 +1,8 @@
-# API 
+# 🔥 API 
 ### **Application Programming Interface**
 - bridges the communication between different pieces of software
 
-## Types of API 
+## ⌖ Types of API 
 - **REST API** (most common)
 - GraphQL
 - SOAP
@@ -10,7 +10,7 @@
 
 <br>
 
-## REST API 
+## → REST API 
 - APIs that follow a particular set of rules
 - use the HTTP protocol to interact with the API (GET, POST, PATCH, PUT, DELETE)
 
@@ -19,7 +19,7 @@
 
 <br>
 
-## API Endpoint
+## → API Endpoint
 ```base-url/endpoint```
 - can be different for different purposes
 - basically a different route on the API provider server
@@ -31,7 +31,7 @@ https://bored-api.appbrewery.com/filter?type=education
 - **endpoint** - random & filter 
 
 
-## Query Parameters 
+## → Query Parameters 
 ```base-url/endpoint?query=value```
 - using ```?query=value```
 - basically like **key & value**
@@ -45,13 +45,13 @@ https://bored-api.appbrewery.com/filter?type=education
 - **query parameter** - ```?type=education```
 
 
-## Multiple Query Parameters 
+## → Multiple Query Parameters 
 ```base-url/endpoint?query1=value1&query2=value2 ```
 - add ```&query=value```
 - start with **?** for the first query-value, cont with **&** for multiple query-value
 
 
-## Path Parameter 
+## → Path Parameter 
 ```base-url/endpoint/{path-param}```
 - use to identify a resource by some specific parameters in the API; 
 - *id, username* etc
@@ -64,7 +64,7 @@ https://bored-api.appbrewery.com/activity/3943506
 
 <br>
 
-## JSON 
+## ⌗ JSON 
 ### **JavaScript Object Notation**
 
 - a way to format data that can be sent over the internet in a readable and efficient way
@@ -83,3 +83,25 @@ const jsonData = JSON.stringify(dataObject);
 ```
 const data = JSON.parse(jsonData);
 ```
+
+<br>
+
+## Axios
+- a package in NPM 
+- helps GET other server in shorter lines
+- better error handling
+- code:
+```
+import axios from "axios";
+ 
+app.get("/", async (req, res) => {
+    try {
+        const response = await axios.get("https://wwww...");
+        res.render("index.ejs", {activity: response.data});
+    } catch (error) {
+        console.error("Failed to make request:", error.message);
+        res.status(500).send("Failed to fetch activity. Please try again.");
+    }
+});
+```
+> Docs available on npm web, search **"axios"**
