@@ -122,3 +122,9 @@ app.get("/", async (req, res) => {
 - public API
 - no security, no need of authorisation
 - but have rate limit, eg: 100 requests /15mins
+
+### 1. Basic Authentication
+- use username and password
+- turns them into base64 code
+- website to decode base64: ```base64decode.org```
+
