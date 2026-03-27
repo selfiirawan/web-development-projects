@@ -114,9 +114,8 @@ app.get("/", async (req, res) => {
 0. No Authentication
 1. Basic Authentication
 2. API Key Authorisation
-3. Token Based
-
-<br>
+3. Token Based Authentication
+<hr>
 
 ### 0. No Authentication 
 - public API
@@ -128,3 +127,24 @@ app.get("/", async (req, res) => {
 - turns them into base64 code
 - website to decode base64: ```base64decode.org```
 
+### 2. API Key Authorisation
+- use API key from the provider website 
+
+### Authentication vs Authorisation
+<hr>
+
+**Authentication:**
+- user login, register
+- something that allow you to identified as a user to use the API provider
+
+<br>
+
+**Authorisation:**
+- something that allow you to use an API
+
+<br>
+
+### 3. Token Based Authentication
+- most secured
+- user&pass ⇢ token ⇢ api
+- OAuth
