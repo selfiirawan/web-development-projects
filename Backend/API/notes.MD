@@ -105,3 +105,13 @@ app.get("/", async (req, res) => {
 });
 ```
 > Docs available on npm web, search **"axios"**
+
+<br>
+
+## API Authentication 
+### **4 tiers of authentication**
+
+0. No Authentication
+1. Basic Authentication
+2. API Key Authorisation
+3. Token Based
