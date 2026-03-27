@@ -115,3 +115,10 @@ app.get("/", async (req, res) => {
 1. Basic Authentication
 2. API Key Authorisation
 3. Token Based
+
+<br>
+
+### 0. No Authentication 
+- public API
+- no security, no need of authorisation
+- but have rate limit, eg: 100 requests /15mins
