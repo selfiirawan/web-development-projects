@@ -28,6 +28,25 @@ app.get("/filter", (req, res) => {
 });
 
 //4. POST a new joke
+app.post("/jokes", (req, res) => {
+  // check for duplicate
+  const duplicate = jokes.find(
+    (joke) => joke.jokeText.toLowerCase() === req.body.text.toLowerCase());
+
+  if (duplicate) {
+    console.log("\nDuplicate joke found: ", duplicate);
+    return res.status(409).json({error: "This joke already exist!"});
+  }
+
+  const newJoke = {
+    id: jokes.length + 1,
+    jokeText: req.body.text,
+    jokeType: req.body.type,
+  };
+  jokes.push(newJoke);
+  console.log("\nNew joke added: ", jokes.slice(-1));
+  res.json(newJoke);
+});
 
 //5. PUT a joke
 
