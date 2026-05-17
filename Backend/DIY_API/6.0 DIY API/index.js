@@ -95,7 +95,7 @@ app.delete("/jokes/:id", (req, res) => {
 
 //8. DELETE All jokes
 app.delete("/all", (req, res) => {
-  const userKey = req.params.key;
+  const userKey = req.query.key;
   if (userKey == masterKey) {
     jokes = [];
     res.sendStatus(200);
