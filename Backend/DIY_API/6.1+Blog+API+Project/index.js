@@ -42,7 +42,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //CHALLENGE 1: GET All posts
 app.get("/posts", (req, res) => {
-  console.log(posts);
+  //console.log(posts);
   res.json(posts);
 });
 
@@ -88,7 +88,15 @@ app.patch("/posts/:id", (req, res) => {
 });
 
 //CHALLENGE 5: DELETE a specific post by providing the post id.
+app.delete("/posts/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const index = posts.findIndex((post) => post.id === id);
 
+  if (index === -1) res.status(404).json({message: "Post doesn't exist."});
+
+  posts.splice(index, 1);
+  res.json({message: "Post deleted."});
+});
 
 app.listen(port, () => {
   console.log(`API is running at http://localhost:${port}`);
