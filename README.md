@@ -29,7 +29,7 @@ This repository contains my mini exercises and projects done from Udemy course
 - RESTful APIs ✅
 
 ### Databases & Authentication
-- SQL & PostgreSQL
+- SQL & PostgreSQL ✅
 - Authentication & Security
 
 ### Front-End Framework
