@@ -1,6 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
+import dotenv from "dotenv";
 import pg from "pg";
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -9,7 +12,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "123456",
+  password: process.env.PG_PASSWORD,
   port: 5432,
 });
 db.connect();
@@ -39,7 +42,7 @@ app.post("/add", async (req, res) => {
 
   try {
     const result = await db.query(
-      "SELECT country_code FROM countries WHERE country_name = $1",
+      "SELECT country_code FROM countries WHERE LOWER(country_name) = LOWER($1)",
       [input]
     );
 
