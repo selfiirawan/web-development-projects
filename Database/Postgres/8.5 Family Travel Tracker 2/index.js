@@ -43,7 +43,6 @@ async function checkVisisted() {
 async function getCurrentUser() {
   const result = await db.query("SELECT * FROM users");
   users = result.rows;
-  console.log("current user: ", users.find((user) => user.id == currentUserId));
   return users.find((user) => user.id == currentUserId);
 }
 
@@ -85,11 +84,29 @@ app.post("/add", async (req, res) => {
   }
 });
 
-app.post("/user", async (req, res) => {});
+app.post("/user", async (req, res) => {
+  if (req.body.add === "new") {
+    res.render("new.ejs");
+  } else {
+    currentUserId = req.body.user;
+    res.redirect("/");
+  }
+});
 
 app.post("/new", async (req, res) => {
   //Hint: The RETURNING keyword can return the data that was inserted.
   //https://www.postgresql.org/docs/current/dml-returning.html
+  const name = req.body.name;
+  const color = req.body.color;
+
+  const result = await db.query (
+    "INSERT INTO users (name, color) VALUES ($1, $2) RETURNING *;",
+    [name, color]
+  );
+
+  currentUserId = result.rows[0].id;
+
+  res.redirect("/");
 });
 
 app.listen(port, () => {
