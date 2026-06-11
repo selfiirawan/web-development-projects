@@ -1,6 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
+import dotenv from "dotenv";
 import pg from "pg";
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -9,7 +12,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "123456",
+  password: process.env.PG_PASSWORD,
   port: 5432,
 });
 db.connect();
@@ -52,6 +55,7 @@ app.get("/", async (req, res) => {
     color: currentUser.color,
   });
 });
+
 app.post("/add", async (req, res) => {
   const input = req.body["country"];
   const currentUser = await getCurrentUser();
