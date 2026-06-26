@@ -43,3 +43,12 @@ SELECT * FROM tableName WHERE id = 2
 SELECT column1, column2 FROM tableName WHERE id = 3
 ```
 - display specific row and column
+---
+### Update Table 
+```
+UPDATE tableName
+SET column1 = value1, column2 = value2
+WHERE id = 1
+```
+- updating a single row of data 
+> remember to use `WHERE` 
