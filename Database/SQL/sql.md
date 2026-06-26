@@ -59,7 +59,7 @@ DELETE FROM tableName
 WHERE id = 3 #example
 ```
 > remember to use `WHERE` 
----
+
 <br>
 
 ## Foreign Keys 
@@ -77,6 +77,28 @@ CREATE TABLE orders (
     product_id INT,
     FOREIGN KEY (customer_id) REFERENCES customers(id),
     FOREIGN KEY (product_id) REFERENCES products(id)
-)
+)_
 ```
 - the keyword is `REFERENCES`
+
+<br>
+
+## Inner Join
+- returns only rows that have **matching values** in both tables
+- can use just `JOIN` instead of `INNER JOIN`, as `INNER` is the **default** join type
+
+syntax:
+```
+SELECT column_name
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name
+```
+
+example:
+```
+SELECT orders.order_number, products.name, products.price, products.stock
+FROM orders
+INNER JOIN products
+ON orders.product_id = products.id
+```
