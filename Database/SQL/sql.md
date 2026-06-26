@@ -59,3 +59,24 @@ DELETE FROM tableName
 WHERE id = 3 #example
 ```
 > remember to use `WHERE` 
+---
+<br>
+
+## Foreign Keys 
+- create a **link** between **two tables**
+- is a **column in a table** that refers to the `PRIMARY KEY` in another table
+- table with `FOREIGN KEY` is called **child table**
+- table with `PRIMARY KEY` is called the **referenced** or **parent table**
+
+example syntax:
+```
+CREATE TABLE orders (
+    id INT PRIMARY KEY, 
+    order_num INT,
+    customer_id INT,
+    product_id INT,
+    FOREIGN KEY (customer_id) REFERENCES customers(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+)
+```
+- the keyword is `REFERENCES`
