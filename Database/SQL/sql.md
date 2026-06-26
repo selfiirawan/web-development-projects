@@ -52,3 +52,10 @@ WHERE id = 1
 ```
 - updating a single row of data 
 > remember to use `WHERE` 
+---
+### Delete Data 
+```
+DELETE FROM tableName
+WHERE id = 3 #example
+```
+> remember to use `WHERE` 
